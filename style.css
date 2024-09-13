@@ -31,3 +31,13 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  /* Background image for the main content */
+  .content {
+    background: url('https://www.example.com/plant-science-background.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  canvas {
+    max-width: 100%;
+  }
+  

@@ -17,7 +17,8 @@
     <div class="row">
       <div class="col-md-3 sidebar bg-dark text-white py-4">
         <div class="text-center mb-3">
-          <img src="profile.jpg" alt="Profile Picture" class="rounded-circle profile-pic" />
+          <!-- Profile Picture or Fallback Icon -->
+          <img src="profile.jpg" alt="Profile Picture" class="rounded-circle profile-pic" onerror="this.src='https://via.placeholder.com/150/3498db/ffffff?text=No+Photo';" />
         </div>
         <nav class="nav flex-column text-center">
           <a href="#about" class="nav-link text-white active" onclick="openTab(event, 'about')">About</a>
@@ -27,15 +28,19 @@
         </nav>
       </div>
 
-      <!-- Content Area -->
+      <!-- Content Area with Background Image -->
       <div class="col-md-9 content py-4">
-        <!-- About Section -->
+        <!-- About Section Card -->
         <div id="about" class="tab-content active">
-          <h2>About Me</h2>
-          <p>I'm Vimlesh, a Web Developer, Enthusiast, and Explorer!</p>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title">About Me</h2>
+              <p class="card-text">I'm Vimlesh, a Web Developer, Enthusiast, and Explorer passionate about plant science!</p>
+            </div>
+          </div>
         </div>
 
-        <!-- Publications Section -->
+        <!-- Publications Section Card -->
         <div id="publications" class="tab-content">
           <h2>My Publications</h2>
           <div class="row">
@@ -52,25 +57,34 @@
                 </div>
               </div>
             </div>
-            <!-- More publication cards can be added here -->
+            <!-- Add more publication cards here -->
           </div>
         </div>
 
-        <!-- Citations Section -->
+        <!-- Citations Section with Bar Chart -->
         <div id="citations" class="tab-content">
-          <h2>Citations Per Year</h2>
-          <canvas id="citationChart" width="400" height="200"></canvas>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title">Citations Per Year</h2>
+              <canvas id="citationChart" width="400" height="200"></canvas>
+            </div>
+          </div>
         </div>
 
-        <!-- Contact Section -->
+        <!-- Contact Section Card -->
         <div id="contact" class="tab-content">
-          <h2>Contact</h2>
-          <p>Email: vimlesh@example.com</p>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title">Contact</h2>
+              <p class="card-text">Email: vimlesh@example.com</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Bootstrap JS and Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>

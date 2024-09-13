@@ -25,19 +25,18 @@ function openTab(evt, tabName) {
     document.querySelector(".nav-link").classList.add("active");
   });
   
-  // Citation Chart
+  // Citation Bar Chart
   const ctx = document.getElementById('citationChart').getContext('2d');
   const citationChart = new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
       labels: ['2020', '2021', '2022', '2023', '2024'], // Replace with actual years
       datasets: [{
         label: 'Citations',
         data: [5, 10, 25, 40, 60], // Replace with your citation data
+        backgroundColor: 'rgba(75, 192, 192, 0.7)',
         borderColor: 'rgba(75, 192, 192, 1)',
-        backgroundColor: 'rgba(75, 192, 192, 0.2)',
-        fill: true,
-        tension: 0.4,
+        borderWidth: 1
       }]
     },
     options: {
