@@ -31,6 +31,16 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  /* Social Media Icons Styling */
+  .social-icons i {
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons i:hover {
+    color: #3498db; /* Change color on hover */
+  }
+  
   /* Background image for the main content */
   .content {
     background: url('https://images.unsplash.com/photo-1561414927-6d86591d0c4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHBsYW50fGVufDB8fHx8MTYyMzI3OTM1NA&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center;

@@ -9,6 +9,8 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     rel="stylesheet"
   />
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,19 +18,32 @@
     <!-- Profile Picture and Navigation Tabs -->
     <div class="row">
       <div class="col-md-3 sidebar bg-dark text-white py-4">
+        <!-- Home Button -->
         <div class="text-center mb-3">
-          <!-- Profile Picture or Fallback Icon -->
+          <a href="index.html" class="btn btn-light">Home</a>
+        </div>
+        <!-- Profile Picture or Fallback Icon -->
+        <div class="text-center mb-3">
           <img src="profile.jpg" alt="Profile Picture" class="rounded-circle profile-pic" onerror="this.src='https://via.placeholder.com/150/3498db/ffffff?text=No+Photo';" />
         </div>
+
+        <!-- Sidebar Navigation Links -->
         <nav class="nav flex-column text-center">
           <a href="#about" class="nav-link text-white active" onclick="openTab(event, 'about')">About</a>
           <a href="#publications" class="nav-link text-white" onclick="openTab(event, 'publications')">Publications</a>
           <a href="#citations" class="nav-link text-white" onclick="openTab(event, 'citations')">Citations</a>
           <a href="#contact" class="nav-link text-white" onclick="openTab(event, 'contact')">Contact</a>
         </nav>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons text-center mt-4">
+          <a href="https://twitter.com/yourprofile" class="text-white mx-2" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com/in/yourprofile" class="text-white mx-2" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://facebook.com/yourprofile" class="text-white mx-2" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
       </div>
 
-      <!-- Content Area with Background Image -->
+      <!-- Content Area -->
       <div class="col-md-9 content py-4">
         <!-- About Section Card -->
         <div id="about" class="tab-content active">
@@ -47,7 +62,7 @@
             <div class="col-md-4">
               <div class="card mb-4">
                 <div class="card-body">
-                  <h5 class="card-title">Deep Learning Approaches for Single Image Super-Resolution</h5>
+                  <h5 class="card-title">Association mapping of resistance to tan spot in the Global Durum Panel. </h5>
                   <p class="card-text">
                     <strong>Published:</strong> IEEE Transactions, 2024
                     <br />
