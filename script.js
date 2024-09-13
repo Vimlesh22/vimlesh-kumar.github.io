@@ -21,7 +21,7 @@ function openTab(evt, tabName) {
   
   // Show default tab on page load
   document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("about").style.display = "block"; // Show About by default
+    document.getElementById("home").style.display = "block"; // Show Home by default
     document.querySelector(".nav-link").classList.add("active");
   });
   

@@ -29,6 +29,25 @@ body {
   
   .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Publication Cards (Material UI-style) */
+  .publication-card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer; /* Makes the card clickable */
+  }
+  
+  .publication-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+  }
+  
+  .publication-card img {
+    height: 200px;
+    object-fit: cover;
   }
   
   /* Social Media Icons Styling */

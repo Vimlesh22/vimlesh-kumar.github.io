@@ -15,21 +15,17 @@
 </head>
 <body>
   <div class="container-fluid">
-    <!-- Profile Picture and Navigation Tabs -->
+    <!-- Sidebar Navigation with Home Button -->
     <div class="row">
       <div class="col-md-3 sidebar bg-dark text-white py-4">
-        <!-- Home Button -->
-        <div class="text-center mb-3">
-          <a href="index.html" class="btn btn-light">Home</a>
-        </div>
         <!-- Profile Picture or Fallback Icon -->
         <div class="text-center mb-3">
           <img src="profile.jpg" alt="Profile Picture" class="rounded-circle profile-pic" onerror="this.src='https://via.placeholder.com/150/3498db/ffffff?text=No+Photo';" />
         </div>
-
         <!-- Sidebar Navigation Links -->
         <nav class="nav flex-column text-center">
-          <a href="#about" class="nav-link text-white active" onclick="openTab(event, 'about')">About</a>
+          <a href="index.html" class="nav-link text-white active" onclick="openTab(event, 'home')">Home</a>
+          <a href="#about" class="nav-link text-white" onclick="openTab(event, 'about')">About</a>
           <a href="#publications" class="nav-link text-white" onclick="openTab(event, 'publications')">Publications</a>
           <a href="#citations" class="nav-link text-white" onclick="openTab(event, 'citations')">Citations</a>
           <a href="#contact" class="nav-link text-white" onclick="openTab(event, 'contact')">Contact</a>
@@ -45,8 +41,18 @@
 
       <!-- Content Area -->
       <div class="col-md-9 content py-4">
+        <!-- Home Section Card -->
+        <div id="home" class="tab-content active">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title">Welcome to My Portfolio</h2>
+              <p class="card-text">Explore my work, publications, and projects related to web development and plant science.</p>
+            </div>
+          </div>
+        </div>
+
         <!-- About Section Card -->
-        <div id="about" class="tab-content active">
+        <div id="about" class="tab-content">
           <div class="card mb-4">
             <div class="card-body">
               <h2 class="card-title">About Me</h2>
@@ -55,14 +61,15 @@
           </div>
         </div>
 
-        <!-- Publications Section Card -->
+        <!-- Publications Section with Material UI-style Cards -->
         <div id="publications" class="tab-content">
           <h2>My Publications</h2>
           <div class="row">
             <div class="col-md-4">
-              <div class="card mb-4">
+              <div class="card publication-card mb-4">
+                <img src="publication-image.jpg" class="card-img-top" alt="Publication Image">
                 <div class="card-body">
-                  <h5 class="card-title">Association mapping of resistance to tan spot in the Global Durum Panel. </h5>
+                  <h5 class="card-title">Deep Learning Approaches for Single Image Super-Resolution</h5>
                   <p class="card-text">
                     <strong>Published:</strong> IEEE Transactions, 2024
                     <br />
