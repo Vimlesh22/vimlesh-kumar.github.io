@@ -33,8 +33,11 @@ body {
   
   /* Background image for the main content */
   .content {
-    background: url('https://www.example.com/plant-science-background.jpg') no-repeat center center;
+    background: url('https://images.unsplash.com/photo-1561414927-6d86591d0c4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHBsYW50fGVufDB8fHx8MTYyMzI3OTM1NA&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center;
     background-size: cover;
+    min-height: 100vh;
+    padding: 2rem;
+    color: #fff;
   }
   
   canvas {
