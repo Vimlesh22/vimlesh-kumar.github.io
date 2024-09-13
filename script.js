@@ -9,7 +9,7 @@ function openTab(evt, tabName) {
     }
   
     // Remove active class from all links
-    tablinks = document.getElementsByClassName("tab-link");
+    tablinks = document.getElementsByClassName("nav-link");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
@@ -22,6 +22,7 @@ function openTab(evt, tabName) {
   // Show default tab on page load
   document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("about").style.display = "block"; // Show About by default
+    document.querySelector(".nav-link").classList.add("active");
   });
   
   // Citation Chart
